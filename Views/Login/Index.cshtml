@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";   
+}
+
+<h2>Login Page</h2>
+<h4>@ViewBag.Message</h4>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<form method="post" class="form-group">
+    <input type="text" id="fname" name="kname" placeholder="Kullanıcı Adınız"><br><br />
+    <input type="password" name="pass" placeholder="Şifreniz"><br><br>
+    <input type="submit" value="Giriş Yap">
+</form>

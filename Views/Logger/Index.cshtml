@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    if (Session["LoginId"] == null)
+    {
+        Response.Redirect("~/Login/Index");
+    }
+}
+
+<script src="~/Scripts/Pages/logger.js"></script>
+
+
+<h2>Save Logger</h2>
+<div class="container">
+    <h2>Log Entries</h2>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    User Name
+                </th>
+                <th>
+                    Log Action
+                </th>
+                <th>
+                    Date
+                </th>
+                <th>
+                    Ip Address
+                </th>
+                <th>
+                    Browser
+                </th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+    </table>
+</div>
+
+
